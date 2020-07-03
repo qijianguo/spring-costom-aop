@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+	<bean id="accountDao" class="com.qijianguo.step02.dao.AccountDaoImpl"></bean>
+	<bean id="accountService" class="com.qijianguo.step02.service.AccountServiceImpl">
+		<!--   set + name就是set方法名；ref就是bean的id		-->
+		<property name="AccountDao" ref="accountDao"></property>
+	</bean>
+</beans>
